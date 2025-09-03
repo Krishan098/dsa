@@ -22,7 +22,7 @@
 - Each new shortest path we discover extends an earlier one
 - By induction, assume we have found shortest paths to all vertices already burnt
 - Next vertex to burn is v, via x
-- Cannot find a shorter path later from y to v wia w
+- Cannot find a shorter path later from y to v via w
     - Burn time of w>= burn time of v
     - Edge from w to v has weight >=0
 - This argument breaks down if edge(w,v) can have negative weight
@@ -89,5 +89,5 @@ def dijkstralist(WList,s):
 #Complexity
 '''
 - setting infinty and updating distances both O(m), amortised
-- Overall O(n**2)
+- Overall O(n**2) 
 '''
